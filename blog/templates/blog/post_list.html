@@ -1,0 +1,13 @@
+
+
+<h1>Hola</h1>
+
+{% for p in posts %}
+
+<div>
+  <p>Publicado : {{ p.published_date }}</p>
+  <h1><a href="#">{{ p.title }}</a></h1>
+  <p>{{ p.text|linebreaksbr }}</p>
+</div>
+
+{% endfor %}
